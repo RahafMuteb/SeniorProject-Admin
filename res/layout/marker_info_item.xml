@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo11"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+        <!--  android:layout_marginStart="-73dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"-->
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/Image"
+            android:text="LockerName"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:fontFamily="@font/alike_angular" />
+
+
+        <!-- Add a "Next" button to navigate to the next activity (SeatBookingActivity) -->
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="-7dp"
+            android:layout_marginBottom="12dp"
+            android:maxLines="2"
+            android:text="_________________________________"
+            android:textColor="#8f9193"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+            android:maxLines="2"
+            android:text="Location"
+            android:textColor="@color/material_dynamic_neutral50"
+            android:textSize="14sp"
+            app:fontFamily="@font/alike_angular" />
+
+        <TextView
+            android:id="@+id/textViewLockers"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDescription"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="12dp"
+            android:maxLines="2"
+            android:text="Number of locker"
+            android:textColor="@color/material_dynamic_neutral50"
+            android:textSize="14sp"
+            app:fontFamily="@font/alike_angular" />
+
+
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="93dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/textViewLockers"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/Image"
+            android:text="Delete"
+            app:backgroundTint="#37469E"
+            app:cornerRadius="@dimen/_255mdp"
+            app:fontFamily="@font/alike_angular"
+            app:iconTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="70dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/textViewLockers"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/buttonDelete"
+            android:text="Edit"
+            app:backgroundTint="#37469E"
+            app:cornerRadius="@dimen/_255mdp"
+            app:fontFamily="@font/alike_angular"
+            app:iconTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="75dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/textViewLockers"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toEndOf="@+id/buttonEdit"
+            android:text="Next"
+            app:backgroundTint="#37469E"
+            app:cornerRadius="@dimen/_255mdp"
+            app:fontFamily="@font/alike_angular"
+            app:iconTint="#FFFFFF" />
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

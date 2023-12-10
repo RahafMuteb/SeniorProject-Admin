@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9FF5F5F6"
+        android:gravity="center"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".fragment.EditLocationScreen">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_10mdp"
+                android:background="@drawable/blue_border"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Location info"
+                    android:textAlignment="center"
+                    android:textColor="#003482"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/alike_angular" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10mdp"
+                    android:layout_marginTop="@dimen/_10mdp"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:fontFamily="@font/alike_angular" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/UpdateName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40mdp"
+                    android:layout_margin="@dimen/_10mdp"
+                    android:background="#FFFFFF"
+                    android:textColor="@color/black"
+                    app:fontFamily="@font/alike_angular" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10mdp"
+                    android:layout_marginTop="@dimen/_10mdp"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:fontFamily="@font/alike_angular" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/UpdateAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40mdp"
+                    android:layout_margin="@dimen/_10mdp"
+                    android:background="#FFFFFF"
+                    android:textColor="@color/black"
+                    app:fontFamily="@font/alike_angular" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10mdp"
+                    android:layout_marginTop="@dimen/_10mdp"
+                    android:text="Number of lockers"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:fontFamily="@font/alike_angular" />
+
+                <Spinner
+                    android:id="@+id/UpdatenumberOfLockersSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10mdp"
+                    android:layout_marginTop="@dimen/_10mdp"
+                    android:textSize="20dp"
+                    app:fontFamily="@font/alike_angular" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="@dimen/_10mdp"
+                    android:layout_marginTop="@dimen/_10mdp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:fontFamily="@font/alike_angular" />
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10mdp"
+                    android:backgroundTint="#003482"
+                    android:text="Save"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/alike_angular" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</layout>

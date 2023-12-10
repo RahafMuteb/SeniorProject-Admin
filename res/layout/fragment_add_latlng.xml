@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="#9FF5F5F6"
+        android:layout_height="match_parent"
+        tools:context=".fragment.AddLatlngFragment"
+        android:gravity="center"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9FF5F5F6"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_12mdp"
+                android:background="@drawable/blue_border"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location info"
+                    android:textAlignment="center"
+                    android:textColor="#003482"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/alike_angular" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/_10mdp"
+                    android:background="@drawable/edittext"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10mdp"
+                        android:layout_marginTop="@dimen/_10mdp"
+                        android:text="Latitude : "
+                        android:textColor="#F0F0F3"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/alike_angular" />
+
+                    <TextView
+                        android:id="@+id/Latitude2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="@dimen/_10mdp"
+                        android:text=""
+                        android:textColor="#F0F0F3"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/alike_angular" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/_10mdp"
+                    android:background="@drawable/edittext"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10mdp"
+                        android:layout_marginTop="@dimen/_10mdp"
+                        android:text="Longitude : "
+                        android:textColor="#F0F0F3"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/alike_angular" />
+
+
+                    <TextView
+                        android:id="@+id/Longitude2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="@dimen/_10mdp"
+                        android:text=""
+                        android:textColor="#F0F0F3"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/alike_angular" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10mdp"
+                    android:layout_marginTop="@dimen/_10mdp"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:fontFamily="@font/alike_angular" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40mdp"
+                    android:layout_margin="@dimen/_10mdp"
+                    android:background="#FFFFFF"
+                    android:textColor="@color/black"
+                    app:fontFamily="@font/alike_angular" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10mdp"
+                    android:layout_marginTop="@dimen/_10mdp"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:fontFamily="@font/alike_angular" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40mdp"
+                    android:layout_margin="@dimen/_10mdp"
+                    android:background="#FFFFFF"
+                    android:textColor="@color/black"
+                    app:fontFamily="@font/alike_angular" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10mdp"
+                    android:layout_marginTop="@dimen/_10mdp"
+                    android:text="Number of lockers"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/numberOfLockersSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10mdp"
+                    android:layout_marginTop="@dimen/_10mdp"
+                    android:textSize="20dp"
+                    app:fontFamily="@font/alike_angular" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="@dimen/_10mdp"
+                    android:layout_marginTop="@dimen/_10mdp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:fontFamily="@font/alike_angular" />
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10mdp"
+                    android:backgroundTint="#003482"
+                    android:text="Submit"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/alike_angular" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</layout>
+    <!-- #1C72C2 0449B2 325EA2  003482 -->

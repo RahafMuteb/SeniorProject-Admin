@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+        <item
+            android:id="@+id/addLocker"
+            android:title="AddLocation"
+            android:icon="@drawable/ic_baseline_add_24"/>
+
+        <item
+            android:id="@+id/manage"
+            android:title="Manage"
+            android:icon="@drawable/edit"/>
+
+        <item
+            android:id="@+id/Profile"
+            android:title="Profile"
+            android:icon="@drawable/profile"/>
+
+</menu>
